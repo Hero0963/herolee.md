@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hero Lee | Developer & ML Enthusiast</title>
+    <title>Hero Lee | ML Workshop</title>
     <style>
         :root {
             --bg-color: #0d1117;
             --text-color: #c9d1d9;
-            --accent-color: #58a6ff;
+            --accent-color: #238636; /* 換成 GitHub 綠，更有開發者感 */
             --card-bg: #161b22;
             --border-color: #30363d;
         }
@@ -23,82 +23,56 @@
             min-height: 100vh;
             margin: 0;
             padding: 20px;
-            box-sizing: border-box;
         }
         .container {
-            max-width: 500px;
+            max-width: 400px;
             width: 100%;
             text-align: center;
         }
         .avatar {
-            width: 120px;
-            height: 120px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
-            border: 3px solid var(--border-color);
-            margin-bottom: 20px;
-            /* 如果有大頭貼，把下面的 URL 換成你的照片網址 */
+            border: 2px solid var(--border-color);
+            margin: 0 auto 20px;
             background-image: url('https://github.com/Hero0963.png'); 
             background-size: cover;
         }
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 5px;
-            color: #ffffff;
-        }
-        p.subtitle {
-            font-size: 1rem;
-            color: #8b949e;
-            margin-bottom: 40px;
-        }
-        .links {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-        .link-card {
+        h1 { font-size: 1.8rem; margin-bottom: 10px; color: #ffffff; }
+        p.subtitle { color: #8b949e; margin-bottom: 40px; font-size: 0.9rem; }
+        
+        .main-link {
             display: block;
-            padding: 18px 20px;
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            color: var(--text-color);
+            padding: 20px;
+            background-color: var(--accent-color);
+            color: #ffffff;
             text-decoration: none;
-            font-size: 1.1rem;
-            font-weight: 500;
-            transition: all 0.2s ease-in-out;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 12px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(35, 134, 54, 0.3);
         }
-        .link-card:hover {
-            border-color: var(--accent-color);
-            background-color: #1f242c;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(88, 166, 255, 0.1);
+        .main-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(35, 134, 54, 0.5);
+            background-color: #2ea043;
         }
-        .link-card span {
-            color: var(--accent-color);
-            margin-right: 8px;
-            font-weight: bold;
-        }
-        footer {
-            margin-top: 50px;
-            font-size: 0.8rem;
-            color: #484f58;
-        }
+        footer { margin-top: 60px; font-size: 0.75rem; color: #484f58; letter-spacing: 1px; }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="avatar"></div>
         <h1>Hero Lee</h1>
-        <p class="subtitle">Building models & breaking things.</p>
+        <p class="subtitle">Machine Learning Enthusiast</p>
         
-        <div class="links">
-            <a href="#" class="link-card" target="_blank"><span>></span> About Me (LinkedIn)</a>
-            <a href="https://github.com/Hero0963" class="link-card" target="_blank"><span>></span> My Projects (GitHub)</a>
-            <a href="/ml" class="link-card"><span>></span> ML Workshop</a>
-        </div>
+        <a href="https://github.com/Hero0963/ml-workshop" class="main-link">
+            進入 ML Workshop →
+        </a>
         
         <footer>
-            &copy; 2026 Hero Lee. Powered by herolee.md
+            HEROLEE.MD &copy; 2026
         </footer>
     </div>
 </body>
